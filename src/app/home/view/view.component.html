@@ -1,0 +1,47 @@
+<div class="container top-margin">
+    <h2>Call details</h2>
+  <form class="form-group">
+    <div class="row top-margin">
+      <div class="col-md-3">
+        <label class="label label-default">Id</label>
+        <input class="form-control" disabled [value]="callInfo.id" />
+      </div>
+      <div class="col-md-3">
+        <label class="label label-default">Call type</label>
+        <input class="form-control" disabled [value]="callInfo.call_type" />
+      </div>
+      <div class="col-md-3">
+        <label class="label label-default">Direction</label>
+        <input class="form-control" disabled [value]="callInfo.direction" />
+      </div>
+      <div class="col-md-3">
+        <label class="label label-default">Duration</label>
+        <input class="form-control" disabled [value]="callInfo.duration" />
+      </div>
+    </div>
+    <div class="row top-margin">
+        <div class="col-md-3">
+          <label class="label label-default">From</label>
+          <input class="form-control" disabled [value]="callInfo.from" />
+        </div>
+        <div class="col-md-3">
+          <label class="label label-default">To</label>
+          <input class="form-control" disabled [value]="callInfo.to" />
+        </div>
+        <div class="col-md-3">
+          <label class="label label-default">Via</label>
+          <input class="form-control" disabled [value]="callInfo.via" />
+        </div>
+        <div class="col-md-3">
+          <label class="label label-default">Created at</label>
+          <input class="form-control" disabled [value]="callInfo.created_at" />
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-3">
+            <label class="label label-default">Status</label>
+          <input class="form-control" disabled [value]="callInfo.is_archived ? 'Archived' : 'Un-Archived'" />
+        </div>
+      </div>
+  </form>
+</div>
